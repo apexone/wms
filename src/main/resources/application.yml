@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: "jdbc:mysql://localhost:3306/WMS"
+    username: "wmsadmin"
+    password: "wms_admin_1"
+  jpa:
+    hibernate:
+      ddl-auto: none
+server:
+  servlet:
+    contextPath: /wms
+  port: 20080
