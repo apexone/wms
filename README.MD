@@ -24,3 +24,11 @@ start application and enter the next line in your browser
 ```
 http://localhost:20080/wms/cargo/hello
 ```
+
+### flyway complain script changed
+connect to mysql en do
+```
+use WMS;
+DELETE FROM flyway_schema_history;
+DROP TABLE Cargo;
+```

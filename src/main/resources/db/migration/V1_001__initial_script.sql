@@ -1,6 +1,6 @@
 CREATE TABLE cargo
 (
-  id VARCHAR(16) NOT NULL PRIMARY KEY,
+  id VARCHAR(36) NOT NULL PRIMARY KEY,
   name VARCHAR(256) NOT NULL,
   description VARCHAR(1024),
   created_by varchar(36) not null,
