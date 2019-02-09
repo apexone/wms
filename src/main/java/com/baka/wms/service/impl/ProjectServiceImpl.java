@@ -23,4 +23,9 @@ public class ProjectServiceImpl implements ProjectService {
         project.setId(UUID.randomUUID());
         return projectRepository.save(project);
     }
+
+    @Override
+    public Project getById(UUID id) {
+        return projectRepository.findById(id).get();
+    }
 }

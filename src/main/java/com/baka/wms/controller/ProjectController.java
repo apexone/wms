@@ -5,6 +5,8 @@ import com.baka.wms.service.ProjectService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.UUID;
+
 @RestController
 @RequestMapping(value = "/project")
 public class ProjectController {
@@ -19,5 +21,11 @@ public class ProjectController {
     public @ResponseBody
     Project createNewProject(@RequestBody Project project) {
         return projectService.createProject(project);
+    }
+
+    @GetMapping(value = "/{identifier}")
+    public @ResponseBody
+    Project createNewProject(@PathVariable(value = "identifier") UUID id) {
+        return projectService.getById(id);
     }
 }
