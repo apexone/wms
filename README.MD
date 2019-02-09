@@ -32,3 +32,4 @@ use WMS;
 DELETE FROM flyway_schema_history;
 DROP TABLE Cargo;
 ```
+Read JPA Repositories
